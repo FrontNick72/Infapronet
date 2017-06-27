@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="UTF-8" />
+	<title>INFAPRONET - Ваш верный помощник в сфере кридтования</title>
+	<link rel="stylesheet" href = "css/style.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <link rel="stylesheet"  href="css/lightslider.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/lightslider.js"></script> 
+    <script src="js/slider.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function(){
+			var touch = $('#touch-menu');
+		    var menu = $('.nav');		 	
+		    $(touch).on('click', function(e) {
+		        e.preventDefault();
+		        menu.slideToggle();
+
+		    });
+
+		    var touch_mobile = $('.touch_menu') ;
+			var menu_mobile = $('.usluga');
+			 
+			$(touch_mobile).on('click', function(e) {
+				e.preventDefault();
+				if ($(window).width() <= '1024'){
+					$(this).find('.usluga').slideToggle();
+					$(this).find('.link span').toggleClass('tr_down tr_up');
+				}
+			});
+
+		    $(window).resize(function(){
+		        var wid = $(window).width();
+		        if(wid > 760 && menu.is(':hidden')) {
+		            menu.removeAttr('style');
+		        }
+		    });
+		    
+		});
+	</script> 
+    
+</head>
+<body>
+	<div class="header">
+		<div class="menu">
+			<div class="wrapper">
+				<a href="#" class = "logo_title item_menu">
+					INFAPRONET
+				</a>
+				<div class="title item_menu">
+					<p>Ваш личный помощник</p>
+					<p>В сфере кридитования</p>
+				</div>
+				<a href="#" id="touch-menu" class = "white" onclick="this.className = (this.className == 'white' ? 'black' : 'white')"></a>
+				<ul class = "nav">					
+					<li class = "search">
+						<label class = "button" for="searchCheck"></label>
+						<input id = "searchCheck" type="checkbox">
+						<form>								
+							<input type="text" class="input-group"  placeholder="Поиск по сайту">
+							<label class = "button" for="searchCheck"></label>									
+							<div class="search_popup">
+								<span>Чаще всего ищут</span>											
+								<ul>									
+									<li><a href="#">Банк МТС онлайн</a></li>
+									<li><a href="#">Онлайн заявка россельхозбанк</a></li>
+									<li><a href="#">Заявка на кредит совкомбанк онлайн</a></li>
+								</ul>
+							</div>						
+						</form>
+					</li>					
+					<li class = "touch_menu" >
+						<a href="#" class = "link pr">
+							Услуги
+							<span class="tr_down"></span>
+						</a>
+						<ul class="usluga">
+							<li>
+								<a href="#" class="ic_list_20x27">Оформление онлайн заявки на кредит</a>			
+							</li>																	
+							<li>
+								<a href="#" class="ic_wallet_23x28">Рефинансирование имеющегося кредита</a>								
+							</li>									
+							<li>
+								<a href="#" class="ic_list2_26x27">Проверка кредитной истории</a>								
+							</li>									
+							<li>
+								<a href="#" class="ic_donat_28x29">Мгновенный займ до 30 000 рублей</a>	
+							</li>
+							<li>
+								<a href="#" class="ic_calc_25x25">Кредитный калькулятор</a>						
+							</li>
+						</ul>	
+					</li>
+									
+					<li class = "touch_menu">
+						<a href="#" class = "link ">
+							Справка
+							<span class="tr_down"></span>
+						</a>
+						<ul class="usluga">
+							<li class="">
+								<a href="http://infapronet.ru/informaciya/">Статьи</a>
+							</li>
+				            <li>
+				            	<a rel="nofollow" href="http://infapronet.ru/vo.html">Вопрос / Ответ</a>
+			            	</li>
+				            <li>
+				            	<a rel="nofollow" href="http://infapronet.ru/zadat-vopros.html">Задать вопрос специалисту</a>
+			            	</li>
+				            <li>
+				            	<a href="http://infapronet.ru/informaciya/3256-kak-pravilno-polzovatsya-kreditom.html">Как правильно пользоваться кредитом</a>
+			            	</li>
+				            <li>
+				            	<a rel="nofollow" style="border:0;" href="http://infapronet.ru/slovar2.html">Кредитный словарь</a>
+			            	</li>
+						</ul>	
+					</li>
+					<li class="applic">
+						<a href="#" class = "btn">
+							Онлайн заявка на кредит
+						</a>
+					</li>
+					
+				</ul>	
+				<div class="clr"></div>						
+			</div>
+		</div>
+		<div class="description">
+			<div class="wrapper">
+				<div class="title">
+						<span>Какой банк</span>
+						одобрит вам кредит?
+				</div>
+				<div class="advantages">
+					<ul>
+						<li>
+							Сумма от 500 до  2 млн. рублей							
+						</li>
+						
+						<li>
+							Срок от 5 дней до 7 лет							
+						</li>
+						
+						<li>
+							Все города РФ							
+						</li>
+						
+						<li>
+							Моментальный подбор предложений							
+						</li>
+					</ul>
+				</div>
+				<div class="sections">					
+					<a href="#" class="ic_rich">
+						Потребительский кредит
+					</a>
+					<a href="#" class="ic_car">
+						Автокредит	
+					</a>			
+					<a href="#" class="ic_cred-card">
+						Кредитные карты
+					</a>	
+					<a href="#" class="ic_coin">
+						Микрозайм
+					</a>
+					<a href="#" class="ic_stopwatch">
+						Экспресс кредит
+					</a>			
+					<a href="#" class="ic_loan">
+						Ипотека
+					</a>
+					<div class="clr"></div>					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="popular">
+		<div class="wrapper">
+			<table class="pop_title">
+				<tr>
+					<td class = "title">
+						Самые популярные материалы
+					</td>
+					<td>
+						<div class="lSAction">
+							<a class = "lSNext">						
+						</a>
+						</div>						
+					</td>					
+				</tr>
+			</table>
+			<div class="slides">
+				<ul id="content-slider">
+					<li>
+						<img src="img/header.jpg" alt="pop1">
+						<a href="#" class="title">
+							Рейтинг Сравни.ру: самые опасные страны для туристов
+						</a>
+					</li>
+					<li>
+						<img src="img/header.jpg" alt="pop2">
+						<a href="#" class="title">
+							TED: Как заставить себя откладывать на пенсию
+						</a>
+					</li>
+					<li> 
+						<img src="img/header.jpg" alt="pop2">
+						<a href="#" class="title">
+							TED: Как вырастить из ребёнка предпринимателя? 
+						</a>
+					</li>
+					<li>
+						<img src="img/header.jpg" alt="pop4">
+						<a href="#" class="title">
+							Что едят на завтрак в самых здоровых странах мира?
+						</a>
+					</li>
+					<li>
+						<img src="img/header.jpg" alt="pop4">
+						<a href="#" class="title">
+							Что едят на завтрак в самых здоровых странах мира?
+						</a>
+					</li>
+					
+				</ul>
+				<div class="clr"></div>	
+			</div>
+
+		</div>
+	</div>
+	<div class="inform_block">
+		<div class="wrapper">
+				<div class="last_public">
+					<div class="title">
+						Последние публикации
+					</div>
+					<div class="block_public">
+						<div class="main">
+							<img src="img/header.jpg" alt="pop4">
+							<a class = "title" href="#">Что едят на завтрак в самых здоровых странах мира?</a>
+						</div>
+						<div class="second">
+							<div class = "item">
+								<img class="lazyOwl" src="img/header.jpg" alt="pop1">
+								<a href="#" class="title">
+									Рейтинг Сравни.ру: самые опасные страны для туристов
+								</a>
+							</div>
+							<div class = "item end_two">
+								<img class="lazyOwl" src="img/header.jpg" alt="pop2">
+								<a href="#" class="title">
+									TED: Как заставить себя откладывать на пенсию
+								</a>
+							</div>
+							<div class = "item end_third">
+								<img class="lazyOwl" src="img/header.jpg" alt="pop3">
+								<a href="#" class="title">
+									TED: Как вырастить из ребёнка предпринимателя? 
+								</a>
+							</div>
+							<div class = "item end_two">
+								<img class="lazyOwl" src="img/header.jpg" alt="pop1">
+								<a href="#" class="title">
+									Рейтинг Сравни.ру: самые опасные страны для туристов
+								</a>
+							</div>
+							<div class = "item">
+								<img class="lazyOwl" src="img/header.jpg" alt="pop2">
+								<a href="#" class="title">
+									TED: Как заставить себя откладывать на пенсию
+								</a>
+							</div>
+							<div class = "item end_third end_two">
+								<img class="lazyOwl" src="img/header.jpg" alt="pop3">
+								<a href="#" class="title">
+									TED: Как вырастить из ребёнка предпринимателя? 
+								</a>
+							</div>
+							<div class="clr"></div>
+						</div>
+					</div>	
+				
+					<table class = "category">
+						<tr>
+							<td>
+								<a href="#" class="ic_eye">
+									Смотреть весь список публикаций
+								</a>
+							</td>							
+							<td>
+								<a href="#" class="ic_search_16x16_blue">
+									Поиск по сайту
+								</a>
+							</td>
+						</tr>
+					</table>					
+				</div>
+				<div class="questions">
+					<div class="title">
+						Вопросы от посетителей
+					</div>
+					<div class="block_question">
+						<a href="#">Взять кредит у частного инвестора  без залога</a>
+						<a href="#">В Москве из-за похолодания перенесли плановое отключение горячей воды</a>
+						<a href="#">Московский зоопарк предложит посетителям скидку за «птичью» фамилию</a>
+						<a href="#">Эксперты назвали лучший поддержанный автомобиль за 100 тысяч рублей</a>
+						<a href="#">Взять кредит у частного инвестора  без залога</a>
+						<a href="#">В Москве из-за похолодания перенесли плановое отключение горячей воды</a>
+						<a href="#">Взять кредит у частного инвестора  без залога</a>
+						<a href="#">В Москве из-за похолодания перенесли плановое отключение горячей воды</a>
+						<a href="#">Московский зоопарк предложит посетителям скидку за «птичью» фамилию</a>
+						<a href="#">Эксперты назвали лучший поддержанный автомобиль за 100 тысяч рублей</a>
+						<a href="#">Взять кредит у частного инвестора  без залога</a>
+						<a href="#">В Москве из-за похолодания перенесли плановое отключение горячей воды</a>
+					</div>
+					<table class = "category">
+						<tr>
+							<td>								
+								<a href="" class = "ic_quest">
+									Задай свой вопрос
+								</a>
+							</td>
+							<td>								
+								<a href="#" class = "ic_message">
+									Все вопросы
+								</a>
+								<div class="search_popup">											
+									<ul>									
+										<li><a href="#">Последние опубликованные</a></li>
+										<li><a href="#">Вопросы по городам</a></li>
+										<li><a href="#">Вопросы по банкам</a></li>
+									</ul>
+								</div>		
+							</td>
+						</tr>
+					</table>					
+				</div>			
+		</div>
+	</div>
+	<div class="banks">
+		<div class="wrapper">
+			<table class="pop_title">
+				<tr>
+					<td class = "title">
+						Информация о банках РФ
+					</td>
+					
+				</tr>
+			</table>
+			<div class="slides">
+				<ul id="banks-slider">
+					<li>
+						<a href="#" class="ic_sber">
+							Сбербанк
+						</a>						
+					</li>
+					<li>												
+						<a href="#" class="ic_Moskva">				
+							Банк Москвы 
+						</a>						
+					</li>
+					<li>										
+						<a href="#" class="ic_RussianStandart">						
+							Русский Стандарт
+						</a>						
+					</li>
+					<li>						
+						<a href="#" class="ic_home-credit">
+							Хоум Кредит
+						</a>						
+					</li>
+					<li>
+						<a href="#" class="ic_PromSvyazBank">
+							ПромсвязьБанк
+						</a>
+					</li>
+					<li>					
+						<a href="#" class="ic_RosBank">
+							Росбанк
+						</a>						
+					</li>
+					<li>						
+						<a href="#" class="ic_VTB">
+							ВТБ и ВТБ 24
+						</a>						
+					</li>
+					<li>
+						<a href="#" class="ic_RosBank">
+							Росбанк
+						</a>					
+					</li>
+					<li>					
+						<a href="#" class="ic_VTB">
+							ВТБ и ВТБ 24
+						</a>						
+					</li>
+				</ul>
+				<div class="clr"></div>	
+			</div>	
+		</div>
+	</div>
+	<div class="information">
+		<div class="wrapper">
+			<div class="inform">
+				<div class="traget">
+					<div class="title">
+						Основная цель нашего сайта
+					</div>
+					<div class="txt">
+						Интернет является неотъемлемой частью жизни каждого человека. Особенно популярна сфера предоставления услуг. Кредит онлайн можно получить гораздо быстрее, нежели при обращении в банки. А с помощью нашего портала Вы сможете подобрать выгодный займ, найти ответы на все интересующие вопросы или задать свой, воспользоваться кредитным калькулятором и пообщаться с антиколлектором. Мы предлагаем взять кредит онлайн без отказа и, не выходя из дома. 
+						<br><br>
+						Проект Infapronet стартовал в 2012 году. Его главной целью является оказание помощи гражданам, которые желают получить кредит онлайн, разрешить проблемыколлекторами или узнать подробную информацию о банках, микрофинансовых организациях, видах займов, способах погашения долгов и т.п.
+					</div>
+				</div>
+				<div class="advantages">
+					<div class="title">
+						Преимущества онлайн кредитования
+					</div>
+					<div class="txt">
+						Дефицит финансов – проблема, которая знакома многим гражданам России. Однако в последнее время она перестала вызывать тревогу, так как имеется простой и доступный для каждого способ решения вопроса нехватки капиталов – получение кредита в банке. 
+						<br><br>
+						Для того чтобы начать подобные денежные отношения с финансово-кредитным учреждением, не придется покидать собственного дома или рабочего места. Современный, удобный и быстрый способ оформить кредит – онлайн заявка. Банки готовы предложить клиентам комфортные и выгодные условия для сотрудничества. 
+						<br><br>
+						Например, оформление кредитной карты с моментальным решением - ответ от банка вы получите через 5-10 минут после заполнения анкеты!
+					</div>
+				</div>				
+			</div>				
+			
+			<div class="right-block">
+				<div class="service">
+					<div class="title">
+						Наши услуги
+					</div>
+					<ul>									
+						<li>
+							<a href="#" class="ic_list_20x27">Оформление онлайн заявки на кредит</a>			
+						</li>																	
+						<li>
+							<a href="#" class="ic_wallet_23x28">Рефинансирование имеющегося кредита</a>								
+						</li>									
+						<li>
+							<a href="#" class="ic_list2_26x27">Проверка кредитной истории</a>								
+						</li>									
+						<li>
+							<a href="#" class="ic_donat_28x29">Мгновенный займ до 30 000 рублей</a>	
+						</li>
+						<li>
+							<a href="#" class="ic_calc_25x25">Кредитный калькулятор</a>						
+						</li>
+					</ul>
+				</div>
+				<div class="online">
+					<div class="title">
+						Оформить онлайн заявку
+					</div>
+					<ul>									
+						<li>
+							<a href="#" class="ic_rich_26x27">Потребительский кредит</a>					
+						</li>																	
+						<li>
+							<a href="#" class="ic_card_26x19">Кредитную карту</a>								
+						</li>									
+						<li>
+							<a href="#" class="ic_coin_24x25">Микрозайм</a>								
+						</li>									
+						<li>
+							<a href="#" class="ic_case_26x23">Кредит для бизнеса</a>	
+						</li>
+						<li>
+							<a href="#" class="ic_loan_26x26">Ипотеку</a>						
+						</li>
+						<li>
+							<a href="#" class="ic_access_23x24">Кредит под залог</a>						
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="clr"></div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="wrapper">
+			<a href="#">О проекте</a>
+			<a href="#">Кредитным брокерам</a>
+			<a href="#">Реклама на проекте</a>
+			<a href="#">Авторское право</a>
+			<a href="#">Карта сайта</a>
+			<a href="#">Отказ от гарантий</a>
+			<a href="#">Политика конфиденциальности</a>
+			<a href="#">Связь с администрацией</a>
+		</div>
+	</div>
+	<div class="contact">
+		<div class="wrapper">
+			<div class="infa">При использовании материалов с сайта ссылка на сайт infapronet.ru обязательна.</div>
+			<div class="infa data">ИП Кадочников Е.С. | ИНН 723001831132 | ОГРНИП 314723220600014</div>
+			<div class="infa">InfaProNet.ru - оформить онлайн-заявку на кредит!</div>
+			<div class="clr"></div>
+		</div>
+	</div>		
+</body>
+</html>
